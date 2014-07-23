@@ -1,0 +1,31 @@
+---
+layout: base
+---
+<!-- Banner -->
+<section id="banner">
+	<div class="inner">
+
+		<header>
+			<h2>{{ site.data.course.title }}</h2>
+		</header>
+		<p>A tool to build a successful course<br />
+		   together with <a href="http://p2pu.org">P2PU</a>.</p>
+	</div>
+</section>
+<div class="container">
+  <div class="row">
+    <h2>Experiment to create my own course</h2>
+    <p>This is the index page for my own experiment into creating an online course. Consider this a very early draft in which I will jot down ideas.</p>
+    <h1>Who else is here?</h1>
+    <ul class="list-inline">
+      {% for user in site.data.course.signups %}
+      <li>
+        <a href="https://twitter.com/{{user.twitter}}">
+          <img class="img-circle profile-picture" src="{{user.image}}" alt="{{user.name}}">
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</div>
